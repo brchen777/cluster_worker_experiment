@@ -1,5 +1,5 @@
 (async () => {
     'use strict';
 
-    console.log(`Worker ${process.env.id} init.`);
+    process.send(`Worker ${process.env.id} init.`);
 })();

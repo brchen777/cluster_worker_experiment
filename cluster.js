@@ -6,18 +6,21 @@
     // const workerCnt = require('os').cpus().length;
     const workerCnt = 1536;
 
-    const main = () => {
+    const main = (() => {
         for (let i = 0; i < workerCnt; i++) {
             cluster.setupMaster({
                 cwd: './res',
                 exec: './c_worker.js'
             });
             const worker = cluster.fork({ id: i + 1 });
+
+            worker.on('message', (msg) => {
+                console.log(msg);
+            });
         }
 
         console.log(`All worker are forked.`);
-    };
-    main();
+    })();
 })();
 
 
