@@ -1,32 +1,29 @@
-# Cluster / Worker Threads Experiment Example #
+# Cluster / Worker Threads Experiment #
 
-## Install
-* Clone project:
-```bash 
-$ git clone <project-url>
-```
-* Install dependency package:
-```bash
-$ npm install
-```
+## Install ##
 
-## Build and Run
-### Cluster
-* Run (use node):
-```bash
-$ node cluster.js
-```
-* Run (use npm):
-```bash
-$ npm run cluster
-```
+### Clone project ###
 
-### Worker Threads
-* Run (use node):
-```bash
-$ node --experimental-worker worker_threads.js
-```
-* Run (use npm):
-```bash
-$ npm run worker_threads
-```
+> git clone \<project-url\>
+
+### Install dependency package ###
+
+> npm install
+
+## Build and Run ##
+
+### Run cluster (use node) ###
+
+> node cluster.js
+
+### Run cluster (use npm) ###
+
+> npm run cluster
+
+### Run worker threads (use node) ###
+
+> node --experimental-worker worker_threads.js
+
+### Run worker threads (use npm) ###
+
+> npm run worker_threads
